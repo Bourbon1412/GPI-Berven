@@ -1,0 +1,2734 @@
+<form id="formu">
+    <fieldset>
+        <b>Region Origen:</b><br>
+        <select class="select" id="origen">
+            <option label="Todos" value="" selected="selected"></option>
+            <option>Arica y Parinacota</option>
+            <option>Tarapacá</option>
+            <option>Antofagasta</option>
+            <option>Atacama</option>
+            <option>Coquimbo</option>
+            <option>Valparaíso</option>
+            <option>Metropolitana</option>
+            <option>Libertador General Bernardo O'Higgins</option>
+            <option>Maule</option>
+            <option>Ñuble</option>
+            <option>Biobío</option>
+            <option>La Araucanía</option>
+            <option>Los Ríos</option>
+            <option>Los Lagos</option>
+        </select><br>
+        <b>Region Destino:</b><br>
+        <select class="select" id="destino">
+            <option label="Todos" value="" selected="selected"></option>
+            <option>Arica y Parinacota</option>
+            <option>Tarapacá</option>
+            <option>Antofagasta</option>
+            <option>Atacama</option>
+            <option>Coquimbo</option>
+            <option>Valparaíso</option>
+            <option>Metropolitana</option>
+            <option>Libertador General Bernardo O'Higgins</option>
+            <option>Maule</option>
+            <option>Ñuble</option>
+            <option>Biobío</option>
+            <option>La Araucanía</option>
+            <option>Los Ríos</option>
+            <option>Los Lagos</option>
+        </select><br>
+        <b>Cantidad de Vehiculos:</b><br>
+        <select class="select" id="vehi">
+            <option label="Todos" value="" selected="selected"></option>
+            <option>1</option>
+            <option>3</option>
+            <option>4 o más</option>
+        </select><br>
+
+        <div> <a class="botb" type="submit" value="Buscar" onclick="precio();"> Cotizar</a>></div>
+    </fieldset>
+</form>
+<script type="text/javascript">
+    function precio() {
+        var origen = document.getElementById("origen").value;
+        var destino = document.getElementById("destino").value;
+        var vehiculos = parseInt(document.getElementById("vehi").value);
+        var div = document.createElement('div');
+
+        if (origen == "Arica y Parinacota") {
+            if(destino == "Arica y Parinacota"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $3.810.400</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $3.037.400</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $2.728.200</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $8.724.400</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $6.927.650</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $6.208.950</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $15.364.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $12.184.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $10.912.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $19.288.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $15.290.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $13.691.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $24.340.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $19.290.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $17.270.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $24.964.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $19.784.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $17.712.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $25.900.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $20.525.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $18.375.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $27.964.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $22.159.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $19.837.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $29.740.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $23.565.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $21.095.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $30.892.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $24.477.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $21.911.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $33.016.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $26.158.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $23.415.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $35.080.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $27.792.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $24.877.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $37.264.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $29.521.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $26.424.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+        }
+
+        if (origen == "Tarapacá") {
+            if(destino == "Tarapacá"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $3.810.400</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $3.037.400</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $2.728.200</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $5.104.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $4.061.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.644.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $11.956.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $9.486.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $8.498.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $15.892.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $12.602.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $11.286.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $20.932.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $16.592.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $14.856.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $21.556.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $17.086.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $15.298.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $22.504.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $17.836.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $15.969.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $24.556.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $19.461.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $17.423.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $26.332.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $20.867.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $18.681.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $27.484.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $21.779.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $19.497.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $29.608.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $23.460.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $21.001.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $31.672.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $25.094.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $22.463.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $33.856.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $26.823.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $24.010.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+
+        }
+
+        if (origen == "Antofagasta") {
+            if(destino == "Antofagasta"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $8.724.400</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $6.927.650</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $6.208.950</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $5.104.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $4.061.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.644.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $6.976.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $5.543.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $4.970.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $10.900.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $8.650.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $7.750.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $15.952.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $12.649.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $11.328.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $16.576.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $13.143.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $11.770.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $17.512.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $13.884.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $12.433.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $19.576.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $15.518.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $13.895.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $21.340.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $16.915.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $15.145.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $22.504.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $17.836.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $15.969.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $24.628.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $19.518.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $17.474.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $26.692.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $21.152.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $18.936.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $28.876.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $22.881.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $20.483.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+
+        }
+
+        if (origen == "Atacama") {
+            if(destino == "Atacama"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $15.364.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $12.184.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $10.912.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $11.956.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $9.486.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $8.498.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $6.976.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $5.543.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $4.970.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $4.168.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $3.320.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $2.981.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $9.208.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $7.310.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $6.551.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $9.832.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $7.804.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $6.993.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $10.780.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $8.555.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $7.665.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $12.844.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $10.189.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $9.127.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $14.608.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $11.585.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $10.376.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $15.760.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $12.497.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $11.192.500</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $17.884.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $14.179.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $12.697.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $19.948.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $15.813.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $14.159.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $22.132.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $17.542.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $15.706.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+        }
+
+        if (origen == "Coquimbo") {
+            if(destino == "Coquimbo"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Valparaíso") {
+            if(destino == "Valparaíso"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Metropolitana") {
+            if(destino == "Metropolitana"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Libertador General Bernardo O'Higgins") {
+            if(destino == "Libertador General Bernardo O'Higgins"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Maule") {
+            if(destino == "Maule"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Ñuble") {
+            if(destino == "Ñuble"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Biobío") {
+            if(destino == "Biobío"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "La Araucanía") {
+            if(destino == "La Araucanía"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = "<div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = "<div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Los Ríos") {
+            if(destino == "Los Ríos"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Lagos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+        }
+
+        if (origen == "Los Lagos") {
+            if(destino == "Los Lagos"){
+                div.innerHTML = "<div> El costo es de $500.000</div>"
+                document.getElementById("formu").appendChild(div);
+            }
+            if (destino == "Arica y Parinacota") {
+                if (vehiculos == "1") {
+                    div.innerHTML = "<div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Tarapacá") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Antofagasta") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Atacama") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Coquimbo") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+
+            if (destino == "Valparaíso") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Metropolitana") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Libertador General Bernardo O'Higgins") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Maule") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $55.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Ñuble") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $1.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $2.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $3.552.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Biobío") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "La Araucanía") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            if (destino == "Los Ríos") {
+                if (vehiculos == "1") {
+                    div.innerHTML = " <div> El costo es de $90.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "3") {
+                    div.innerHTML = " <div> El costo es de $85.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+                if (vehiculos == "4") {
+                    div.innerHTML = " <div> El costo es de $80.000</div>"
+                    document.getElementById("formu").appendChild(div);
+                }
+            }
+            
+        }
+    }
+
+</script>
