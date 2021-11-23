@@ -1,91 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include ('partials/head.html') %>
-        <title>
-            <%= title %>
-        </title>
-
-
-
-        <style>
-            .entrada {
-                margin: 8px 0 8px 0;
-                padding: 6px;
-                font-size: 1em;
-                border: 5px solid #3892dd;
-                width: 260px;
-            }
-
-            .select {
-                margin: 6px 0 12px 0;
-                padding: 6px;
-                font-size: 1em;
-                border: 2px solid #3892dd;
-                width: 260px;
-            }
-
-            .botb {
-                margin: 8px 0 8px 0;
-                padding: 9px;
-                font-size: 1em;
-                background-color: #3892dd;
-                border: 0;
-                color: #fff;
-            }
-        </style>
-
+    <title><%= title %></title>
 </head>
-
 <body>
     <%- include ('partials/navigation.html') %>
-
         <div class="contenedor6" style="padding: 40px; margin-top: 10px;">
             <div class="row">
                 <div class="col">
-                    <%- include ('partials/cotizacion.html') %>
+                    <div class="contenedor7">
+                        <%- include ('partials/coti.html') %>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="text6">
-                        Para nosotros es muy importante tu necesidad, es por lo mismo que solicitamos dejes tu número de
-                        contacto <br\> y en un máximo de 30 minutos nos comunicaremos contigo.
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <button class="btn btn-primary btn-block" style="margin-top: 25px; ">
-                                Enviar
-                            </button>
+                    <div class="contenedor8">
+                        <div class="text6" style="font-size: 15px;">
+                            <b>Para nosotros es muy importante tu necesidad, es por lo mismo que solicitamos dejes tu número de
+                            contacto <br\> y en un máximo de 30 minutos nos comunicaremos contigo.</b>
                         </div>
-
+                        <div class="form-group" style="margin-top: 13px;margin-bottom: 13px;">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary btn-block" style="margin-top: 25px; ">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
         </div>
-
-
-
-
-
-
-
-
-
         <%- include ('partials/footer.html') %>
 </body>
-
 </html>
